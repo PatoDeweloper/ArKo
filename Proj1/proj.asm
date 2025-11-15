@@ -33,7 +33,7 @@ check_sign:
     jae buffer_full
 
     push ax
-    inc word [count]
+    inc [count]
     jmp read
 
 bad:

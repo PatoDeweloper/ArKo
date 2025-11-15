@@ -1,0 +1,1 @@
+Napisać program, który pobiera ciąg znaków z wejścia i wypisuje na wyjściu znaki o kodach ASCII zwiększone o 2 w stosunku do znaków z tego ciągu. Program powinien móc wielokrotnie powtarzać operację z różnymi ciągami znaków oraz zakończyć pracę po naciśnięciu przez użytkownika klawisza SPACJA. Wykorzystaj procedury i stos. Przewidzieć sytuacje wyjątkowe.
