@@ -1,0 +1,41 @@
+section.text ;początek sekcji kodu - instrukcji
+start: ;
+label:
+section.data ;początek sekcji danych - deklaracja + inicjalizacja zmiennych
+section.bss ;początek sekcji rezerwacji miejsca na dane
+org 100h ;informacja dla kompilatora, że program wynikowy będzie .com oraz że kod programu będzie znajdował się pod adresem 100h(x100, h-hexadecimal), dziesiętnie 256
+mov
+mul
+cmp
+ah
+ax
+al.
+bx
+cx
+cl
+dx
+db
+dd
+dw
+dl
+int 16h
+int 21h
+inc
+4c00h
+loop
+jnz
+jmp
+ja
+jae
+jb
+jbe
+je
+jg
+jl
+jz
+dec
+add
+sub
+cmp
+xor
+pushpop

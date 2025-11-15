@@ -1,0 +1,60 @@
+ENDIANESS - skośność danych, sposób w jaki dane są zapisywane w wielobajtowych
+
+MSB - most signyficant byte
+LSB - least signyficant byte
+
+Dwa główne zapisy byte'a
+BIG-ENDIAN - pierwszy byte to MSB, ostatni LSB
+LITTLE-ENDIAN - pierwszy byte to LSB, ostatnio MSB
+
+0x12325678	78	56	32	12	(Na egzaminie! zapisywanie liczby BIG/LITTLE ENDIAN)
+		12	31	56	78
+
+BI-ENDIAN - mieszanka gdzie kolejność może być modyfikowana programowo
+
+;instrukcje wykonują się od dołu do góry ale możliwe sa skoki
+
+add ax, bx
+sub ax, bx
+cmp ax, bx ; ax-bx = 0 sprawdza czy dostanie 0
+
+FLAGS; EFLAGS; RFLAGS ; rejestr flag do operacji arytmetycznych 
+Jxx etykieta (J(Jump)+etykieta/opis)
+
+dec cx - decrement cx (odejmij 1 od cx)
+inc dx - incremeny dx ; dx+1
+
+ZF ; Zero flag - ustawiona na 1 jeśli instrukcja porównania zwroci 1
+CF ; Carry flag
+OF ; Over flow 
+PF
+
+;Stan flag decyduje czy skok zostanie wykonany
+
+CMP AL, BL ; AL-BL = 0?
+JA ; jump above JUMP IF ABOVE; CF = 0, ZF = 0
+JE ; jump equal ; rowne jump if equal; jz jump if zero ZF = 1
+JNE, JNZ	JUMP IF NOT EQUAL; JNZ - JUMP IF NOT ZERO
+JB ; jump below JMP IF BELOW ; CF = 1
+JBE ; JUMP IF BELOW OR EQUAL
+JAE ; JUMP IF ABOVE OR EQUAL
+
+
+większe:
+
+rowne:
+
+mniejsze:
+
+;po wykonanoi CMP flagi zaleznie od wyniku wskaza gdzie przeskoczyć
+
+
+loop cx
+
+mov cx, 5
+petla:
+	ciało petli
+loop petla ; cx - 1 ; defaultowo ; cx jest do zliczania np. inkrementacji/dekremantacji petli
+
+jnz - JUMP IF NOT ZERO
+

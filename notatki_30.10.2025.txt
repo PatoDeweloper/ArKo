@@ -1,0 +1,16 @@
+CALL / RET
+
+SS: SP stack pointer
+SP ESP RSP ;
+
+;segment * 16 + offset
+ss = 2000h
+sp = FFFEh
+2000h * 16 + FFFEh = 20000h + FFFEh = 2FFFEh
+
+PUSH, POP, CALL, RET 
+SS:SP
+
+SP
+PUSH A
+PUSH B

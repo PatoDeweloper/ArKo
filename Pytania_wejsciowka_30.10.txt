@@ -1,0 +1,10 @@
+Pytanie do wejsciowki - pisana na kartce
+alokacja pamięci - zarezerwuj pamięć na 4bajty
+instrukcje
+skok warunkowy
+przerwanie int21h
+wysiwetlenie int
+wyswietlnie string
+wyświetlenie ascii
+instrukcje arytmetyczne na liczbach
+do czego sluzy org 100h
