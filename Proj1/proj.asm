@@ -86,5 +86,5 @@ com1    db "Program zwraca wprowadzony tekst, ktorego wartosc kodu ASCII kazdego
 com2    db 10, 13, "Wpisz tekst: ", 10, 13, "$"
 
 count       dw 0
-buffer_size equ 60000
+buffer_size equ 4000
 buffer      times buffer_size db 0
